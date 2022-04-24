@@ -11,3 +11,4 @@ crate-type = ["cdylib"]
 [dependencies]
 pyo3 = { version = "0.16.3", features = ["extension-module"] }
 boa_engine = { git = "https://github.com/boa-dev/boa" }
+rand = "0.8.5"
