@@ -62,5 +62,6 @@ fn eval_js(code: &str) -> PyResult<String> {
 fn boa(_py: Python, m: &PyModule) -> PyResult<()> {
     m.add_function(wrap_pyfunction!(eval_js, m)?)?;
     m.add_class::<Interpreter>()?;
+    m.add("JSException", _py.get_type::<JSException>())?;
     Ok(())
 }

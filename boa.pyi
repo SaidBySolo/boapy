@@ -1,3 +1,8 @@
+class JSExeption(Exception):
+    """
+    JavaScript exception
+    """
+
 class Interpreter:
     def execute(self, code: str) -> str:
         """
